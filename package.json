@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "azure-mobile-apps": "^4.0.1",
     "express": "^4.15.3"
   }
 }
