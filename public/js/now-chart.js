@@ -1,11 +1,12 @@
 var data = {};
 console.log("Request started");
-$.get("test.php", function(entries) {
+$.getJSON("http://wacomo2.azurewebsites.net/data", function(entries) {
     // console.log("request succeeded");
     // console.log(data);
     // var dataString = data.split("<")[0];
     // var entries = JSON.parse(dataString);
-    // console.log(entries);
+    console.log(entries);
+
     var elements = generateElements(entries, (new Date()).getHours(), (new Date()).getDate());
     data = {
         labels: Array.apply(null, Array((new Date()).getMinutes() + 1)).map(function(_, i) {
