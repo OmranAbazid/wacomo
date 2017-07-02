@@ -1,105 +1,135 @@
-h1.title{
-  color:white;
-  font-weight: bolder;
-}
-body{
-  background:#07263b;
-}
-.navbar-blue{
-  background-color: #07263b;
-  border-radius: none;
+h1.title {
+    color: white;
+    font-weight: bolder;
 }
 
-#sidebar-wrapper{
-  background-color: #0c2133;
-  color:#fff;
-}
-.sidebar-nav > .sidebar-brand a{
-  color:#fff;
+body {
+    background: #07263b;
 }
 
-.nav-tabs > li, .nav-pills > li {
-    float:none;
-    display:inline-block;
-    *display:inline; /* ie7 fix */
-     zoom:1; /* hasLayout ie7 trigger */
-
+.navbar-blue {
+    background-color: #07263b;
+    border-radius: none;
 }
-.nav-pills>li>a{
-  border-radius: 50px;
-  color:#fff;
+
+#sidebar-wrapper {
+    background-color: #0c2133;
+    color: #fff;
+}
+
+.nav-tabs>li, .nav-pills>li {
+    float: none;
+    display: inline-block;
+    *display: inline;
+    /* ie7 fix */
+    zoom: 1;
+    /* hasLayout ie7 trigger */
+}
+
+.nav-pills>li>a {
+    border-radius: 50px;
+    color: #fff;
 }
 
 .nav-tabs, .nav-pills {
-    text-align:center;
-    background:#0b3049;
+    text-align: center;
+    background: #0b3049;
     border-radius: 50px;
     margin-bottom: 50px;
 }
 
-.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
-  background-color:#07263b;
-  color:#25afb4;
-  margin: 5px;
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    background-color: #07263b;
+    color: #25afb4;
+    margin: 5px;
 }
 
-.panel{
-  background-color:rgba(0,0,0,0);
-  border:2px solid #0b3049;
-}
-.panel-default>.panel-heading{
-  background-color: #218791;
-  border:none;
-  text-transform: capitalize;
-  font-weight: bold;
-  color:#fff;
+.panel {
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #0b3049;
 }
 
-a.card{
-  height: 150px;
-  margin:30px;
-  display:block;
-  color:#fff;
-  text-decoration: none;
-}
-a.card img{
-  padding:20px;
-}
-a.card span{
-  margin-left: 30px;
-  font-size: 36px;
-}
-.card-red{
-  background-color: #f04e51;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-.card-yellow{
-  background-color: #e5d948;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-.card-green{
-  background-color: #218791;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+.panel-default>.panel-heading {
+    background-color: #218791;
+    border: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #fff;
 }
 
-
-@media (max-width: 768px){
-  a.card span{
-    font-size: 20px;
-  }
-  a.card img{
-    height: 130px
-  }
+a.card {
+    height: 150px;
+    margin: 30px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
 }
-@media (max-width: 320px){
-  a.card span{
-    font-size: 20px;
-  }
-  a.card{
-    height: 170px;
-  }
-  a.card img{
-    text-align: center;
-    height: 100px
-  }
+
+a.card img {
+    padding: 20px;
+}
+
+a.card span {
+    margin-left: 30px;
+    font-size: 36px;
+}
+
+.card-red {
+    background-color: #f04e51;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card-yellow {
+    background-color: #e5d948;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card-green {
+    background-color: #218791;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+@media (max-width: 768px) {
+    a.card span {
+        font-size: 20px;
+    }
+    a.card img {
+        height: 130px
+    }
+}
+
+@media (max-width: 320px) {
+    a.card span {
+        font-size: 20px;
+    }
+    a.card {
+        height: 170px;
+    }
+    a.card img {
+        text-align: center;
+        height: 100px
+    }
+}
+
+#menu-toggle span {
+    margin-top: 15px;
+}
+
+#menu-toggle span, #menu-toggle span:before, #menu-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 4px;
+    width: 30px;
+    background: white;
+    position: absolute;
+    display: block;
+    content: '';
+}
+
+#menu-toggle span:before {
+    top: -10px;
+}
+
+#menu-toggle span:after {
+    bottom: -10px;
 }

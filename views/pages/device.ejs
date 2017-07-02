@@ -1,0 +1,59 @@
+<% include ../partials/header %>
+<div id="page-content-wrapper">
+    <div class="container" id="exTab1">
+        <ul class="nav nav-pills">
+            <li class="active">
+                <a data-toggle="tab" href="#1a">
+                    Now
+                </a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#2a">
+                    Today
+                </a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#3a">
+                    Week
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content clearfix">
+            <div class="tab-pane active" id="1a">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Now
+                    </div>
+                    <div class="panel-body">
+                        <canvas id="now-chart">
+                        </canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="2a">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Today
+                    </div>
+                    <div class="panel-body">
+                        <canvas id="today-chart">
+                        </canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="3a">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        week
+                    </div>
+                    <div class="panel-body">
+                        <canvas id="week-chart">
+                        </canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /#page-content-wrapper -->
+<% include ../partials/footer %>

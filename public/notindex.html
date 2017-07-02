@@ -70,32 +70,9 @@
           $("#wrapper").toggleClass("toggled");
         }
         $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
+          e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
         });
         </script>
-        <style>
-            #menu-toggle span {
-              margin-top:15px;
-            }
-            #menu-toggle span,
-            #menu-toggle span:before,
-            #menu-toggle span:after {
-              cursor: pointer;
-              border-radius: 1px;
-              height: 4px;
-              width: 30px;
-              background: white;
-              position: absolute;
-              display: block;
-              content: '';
-            }
-            #menu-toggle span:before {
-              top: -10px;
-            }
-            #menu-toggle span:after {
-              bottom: -10px;
-            }
-        </style>
     </body>
 </html>
