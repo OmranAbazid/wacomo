@@ -30,15 +30,12 @@
                           Wacomo
                       </a>
                   </li>
-                  <% getJSON("http://wacomo2.azurewebsites.net/devices", function(devices){ %> 
                   <% for (var i = 0; i < devices.length; i++) { %>
-
                   <li>
-                      <a href="/<% devices[i].name%>"><% devices[i].name%></a>
+                      <a href="/<%- devices[i].name %>"><%- devices[i].name%></a>
                   </li>
             
                   <% } %>
-                  <% }); %>
               </ul>
           </div>
 
@@ -49,5 +46,4 @@
             <!-- Page Content -->
             <nav class="navbar navbar-blue navbar-static-top" role="navigation">
               <a class="navbar-brand" onclick="openNav()" id="menu-toggle" href="#menu-toggle"><span></span> </a>
-              <h1 class='text-center title'>WaCoMo</h1>
             </nav>

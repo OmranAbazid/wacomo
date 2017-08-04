@@ -16,6 +16,7 @@
     "azure-mobile-apps": "^4.0.1",
     "ejs": "^2.5.6",
     "express": "^4.15.3",
+    "request": "^2.81.0",
     "sqlite3": "^3.1.8"
   }
 }

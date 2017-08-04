@@ -16,19 +16,22 @@ body {
     background-color: #0c2133;
     color: #fff;
 }
-
-.nav-tabs>li, .nav-pills>li {
-    float: none;
-    display: inline-block;
-    *display: inline;
-    /* ie7 fix */
-    zoom: 1;
-    /* hasLayout ie7 trigger */
+ul.nav.nav-tabs{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
 }
 
 .nav-pills>li>a {
     border-radius: 50px;
     color: #fff;
+    text-align: center;
+
+}
+
+.nav-pills>li>a:hover{
+    color: #fff;
+    background: #218791;
 }
 
 .nav-tabs, .nav-pills {
